@@ -12,8 +12,8 @@ public class DragAndDrop
 	public static void main (String args[])throws InterruptedException
 	
 	{
-//		driver = new FirefoxDriver();
-//		driver.manage().window().maximize();
+		driver = new FirefoxDriver();
+		driver.manage().window().maximize();
 		driver.get("http://jqueryui.com/droppable/");
 		Actions builder = new Actions(driver); 
 		driver.switchTo().frame(driver.findElement(By.className("demo-frame")));
